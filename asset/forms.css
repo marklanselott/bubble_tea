@@ -1,0 +1,81 @@
+.tube-input {
+  width: 100%;
+  margin: 0 0 10px 0;
+  padding: 10px 16px;
+  font-size: 16px;
+  border: none;
+  background-color: #f0f0f0;
+  box-shadow: inset 2px 2px 5px rgba(0,0,0,0.1),
+              inset -2px -2px 5px rgba(255,255,255,0.7);
+  outline: none;
+  transition: box-shadow 0.2s ease;
+  box-sizing: border-box;
+}
+
+.tube-input::placeholder {
+  color: #999;
+}
+
+.tube-input:focus {
+  box-shadow: 0 0 0 3px rgba(100, 150, 250, 0.4);
+}
+
+
+.file-drop-zone {
+  width: 100%;
+  padding: 16px 20px;
+  margin: 20px auto;
+  background-color: #f0f0f0;
+  border: 2px dashed #999;
+  text-align: center;
+  color: #666;
+  font-size: 16px;
+  cursor: pointer;
+  user-select: none;
+  box-sizing: border-box;
+  transition: background-color 0.2s, border-color 0.2s;
+}
+
+.file-drop-zone:hover {
+  background-color: #e8f0ff;
+  border-color: #007bff;
+}
+
+.file-drop-zone.dragover {
+  background-color: #d0e5ff;
+  border-color: #0056b3;
+  color: #0056b3;
+}
+
+.tube-input,
+.file-drop-zone {
+  border-radius: 50px;
+}
+
+.btn {
+  flex: 1;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.save-btn {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.save-btn:hover {
+  background-color: #45a049;
+}
+
+.delete-btn {
+  background-color: #f44336;
+  color: white;
+}
+
+.delete-btn:hover {
+  background-color: #d32f2f;
+}
